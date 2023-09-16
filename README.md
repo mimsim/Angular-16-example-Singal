@@ -1,4 +1,4 @@
-# Angular16Signal
+#  Angular 16 example with Singal and Material
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 

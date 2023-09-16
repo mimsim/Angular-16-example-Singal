@@ -1,0 +1,13 @@
+<mat-card [ngClass]="{    'hilite': hilite()}">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{user?.username}}</mat-card-title>
+      <mat-card-subtitle>{{user?.email}}<br>{{user?.phone}}
+      </mat-card-subtitle>   
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content class="space-between">
+    <button mat-raised-button (click)="highLight()" color="accent" class="w48">Hilight</button>
+    <button mat-raised-button (click)="setCurrent()" *ngIf="!isCurrent" class="w48">Set current</button>
+  </mat-card-content>
+</mat-card>

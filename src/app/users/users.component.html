@@ -1,0 +1,11 @@
+<section class="container">
+    <article class="article-content">
+        <div class="row">
+            <app-user-details *ngFor="let user of users" [user]="user"></app-user-details>
+        </div>
+        <p>{{ firstName() + ' ' + lastName() }}</p>
+        <p>{{ fullName() }}</p>
+        <p>{{signalCounter}}</p>
+        <button (click)="changeName()" mat-raised-button color="primary">Increase</button>
+    </article>
+</section>
